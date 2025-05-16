@@ -1,3 +1,5 @@
+![CodexFileHog](./docs/image0.jpg "Codex FileHog")
+
 # Codex FileHog
 A tool to store up entire folders of data on the Codex storage network.
 
