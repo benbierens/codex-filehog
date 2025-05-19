@@ -61,15 +61,15 @@ API: https://api.codex.storage
     - Which Codex node was used for this file
     - Possible error information
   
-- The tool will save the values in the output folder in accorance with the configured ([1.3]) structure:
+- The tool will save the values in the output folder in accordance with the configured ([1.3]) structure:
   - [2.7] Flattened:
     - A single file is created or updated that contains the values for each file processed. In addition to values listed at [2.6], the relative path of the file in the target folder must be included.
   - [2.8] Structured:
     - A file is created or updated for each file processed. The name and relative path of this output file matches exactly the name and relative path of the file in the target folder, except a type extension is added. For example: ".json" in case of JSON files.
 
 ### [3.0] Purchasing
-- [3.1] The tool will use the Codex API to create storage purchases in accorance with the configured ([1.3]) purchase values.
-- [3.2] If purchasing fails because of a incorrect configuration value, then the tool crashes with a clear error message. (Codex API should indicate invalid values with a return code/error message.)
+- [3.1] The tool will use the Codex API to create storage purchases in accordance with the configured ([1.3]) purchase values.
+- [3.2] If purchasing fails because of an incorrect configuration value, then the tool crashes with a clear error message. (Codex API should indicate invalid values with a return code/error message.)
 
 ### [4.0] Monitoring
 - [4.1] The tool will monitor the target folder for newly added files. These files will be included in its operation.
@@ -95,7 +95,7 @@ API: https://api.codex.storage
 - "CID of original upload dataset": Returned by the API POST request to `/data`
 - "Purchase ID": Returned by the API POST request to `/storage/request/{cid}`
 - "CID of storage contract dataset": Returned in the JSON structure under `request/content/cid` by the API GET request to `/storage/purchases/{id}`. This CID will be different from the one used to create the purchase.
-- "A moderately experienced computer user": These users are comfortable operating a terminal and editing config files. They understand file system paths and can fix common setting issues. They can't necessarily write or understand code. They have
+- "A moderately experienced computer user": These users are comfortable operating a terminal and editing config files. They understand file system paths and can fix common setting issues. They can't necessarily write or understand code.
 
 ### Bonus goals
 With the above requirements implemented, the tool should cover its intended use case. However, there are improvements that can be created to make using the tool easier. Here are some suggestions for additional features. If you come up with ideas of your own, you are invited and encouraged to contribute them!
